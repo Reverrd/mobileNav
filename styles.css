@@ -1,0 +1,106 @@
+:root{
+    --primaryColor: #281c47;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  background-color: #c0bebe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primaryColor);
+font-family: "Roboto", sans-serif;
+}
+.wrapper{
+    background-color:white ;
+   
+    box-shadow: -3px 4px 12px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -3px 4px 12px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -3px 4px 12px 0px rgba(0,0,0,0.75);
+height: auto;
+padding: 25px 20px;
+border-radius: 15px;
+}
+header{
+    display: flex;
+    align-items: center;
+   
+    gap: 10px;
+
+}
+.profileImg img{
+    width: 50px;
+    height: 55px;
+    border-radius: 15%;
+    object-fit: cover;
+}
+hr{
+    margin: 20px 0;
+    border-color: rgba(128, 128, 128, 0.164);
+}
+.middleBar nav{
+display: flex;
+align-items: center;
+justify-content: space-between;
+cursor: pointer;
+padding: 0 10px;
+}
+.middleBar nav:hover{
+    background-color: #281c4746;
+    border-radius: 10px;
+}
+.middleBar nav > :first-child{
+    
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    padding: 10px 0;
+}
+.icon{
+    background-color: #281c4741;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+}
+#btmNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 60px;
+    
+}
+.btmIcon{
+    cursor: pointer;
+}
+.btmIcon:hover{
+    background-color: #281c4746;
+    border-radius: 10px;
+}
+.btmIcon svg{
+    font-size: 30px;
+    padding: 3px;
+}
+
+@media screen and (min-width:700px) {
+    .wrapper{
+        width: 45%;
+    }
+}
+@media screen and (max-width:699px) {
+    .wrapper{
+        width: 70%;
+    }
+}
+@media screen and (max-width:464px) {
+    .wrapper{
+        width: 90%;
+    }
+}
